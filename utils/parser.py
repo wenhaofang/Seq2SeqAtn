@@ -18,6 +18,16 @@ def get_parser():
     parser.add_argument('--max_numb', type = int, default = 30000, help = '')
     parser.add_argument('--max_seq_len', type = int, default = 16, help = '')
 
+    # For Module
+    parser.add_argument('--enc_emb_dim', type = int, default = 256, help = '')
+    parser.add_argument('--dec_emb_dim', type = int, default = 256, help = '')
+
+    parser.add_argument('--enc_hid_dim', type = int, default = 512, help = '')
+    parser.add_argument('--dec_hid_dim', type = int, default = 512, help = '')
+
+    parser.add_argument('--enc_dropout', type = float, default = 0.5, help = '')
+    parser.add_argument('--dec_dropout', type = float, default = 0.5, help = '')
+
     # For Train
     parser.add_argument('--batch_size', type = int, default = 64, help = '')
 

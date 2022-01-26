@@ -15,3 +15,9 @@ PYTHONPATH=. python dataprocess/process.py
 ```shell
 PYTHONPATH=. python loaders/loader.py
 ```
+
+* for module
+
+```shell
+PYTHONPATH=. python modules/Seq2SeqAttentionBahdanau.py
+```
