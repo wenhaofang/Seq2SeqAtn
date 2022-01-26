@@ -7,3 +7,11 @@ This is a Seq2Seq model with various attention mechanisms, decoding strategies, 
 ```shell
 PYTHONPATH=. python dataprocess/process.py
 ```
+
+### Unit Test
+
+* for loader
+
+```shell
+PYTHONPATH=. python loaders/loader.py
+```
