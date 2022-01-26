@@ -19,5 +19,8 @@ PYTHONPATH=. python loaders/loader.py
 * for module
 
 ```shell
+# Seq2Seq with Attention Bahdanau
 PYTHONPATH=. python modules/Seq2SeqAttentionBahdanau.py
+# Seq2Seq with Attention Luong
+PYTHONPATH=. python modules/Seq2SeqAttentionLuong.py
 ```
