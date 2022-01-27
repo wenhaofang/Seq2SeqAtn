@@ -13,14 +13,12 @@ PYTHONPATH=. python dataprocess/process.py
 * for loader
 
 ```shell
-PYTHONPATH=. python loaders/loader.py
+PYTHONPATH=. python loaders/loader1.py
 ```
 
 * for module
 
 ```shell
-# Seq2Seq with Attention Bahdanau
-PYTHONPATH=. python modules/Seq2SeqAttentionBahdanau.py
-# Seq2Seq with Attention Luong
-PYTHONPATH=. python modules/Seq2SeqAttentionLuong.py
+PYTHONPATH=. python modules/module1.py # Seq2Seq with Attention Bahdanau
+PYTHONPATH=. python modules/module2.py # Seq2Seq with Attention Luong
 ```
