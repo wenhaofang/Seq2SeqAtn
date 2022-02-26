@@ -45,7 +45,6 @@ logger = get_logger(option.name, logs_path)
 from loaders.loader1 import get_loader as get_loader1
 
 from modules.module1 import get_module as get_module1
-from modules.module2 import get_module as get_module2
 
 from utils.misc import train, valid, save_checkpoint, load_checkpoint, save_sample
 
@@ -63,12 +62,9 @@ trg_vocab_size = len(trg_vocab['word2id'])
 src_padded_idx = src_vocab['word2id'].get(src_vocab['special']['PAD_TOKEN'])
 trg_padded_idx = trg_vocab['word2id'].get(trg_vocab['special']['PAD_TOKEN'])
 
-if option.module == 1:
-    seq2seq = get_module1(option, src_vocab_size, trg_vocab_size, src_padded_idx, trg_padded_idx)
-if option.module == 2:
-    seq2seq = get_module2(option, src_vocab_size, trg_vocab_size, src_padded_idx, trg_padded_idx)
+seq2seq = get_module1(option, src_vocab_size, trg_vocab_size, src_padded_idx, trg_padded_idx)
 
-seq2seq = seq2seq.to(device)
+seq2seq = seq2seq.to (device)
 
 logger.info('prepare envs')
 

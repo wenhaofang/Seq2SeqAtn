@@ -29,11 +29,9 @@ def get_parser():
     parser.add_argument('--dec_dropout', type = float, default = 0.5, help = '')
 
     parser.add_argument('--attention_type', choices = ['bahdanau', 'luong'], default = 'luong', help = '')
-    parser.add_argument('--align_method', choices = ['dot', 'general', 'concat'], default = 'concat', help = '')
+    parser.add_argument('--align_method'  , choices = ['dot', 'general', 'concat'], default = 'concat', help = '')
 
     # For Train
-    parser.add_argument('--module', type = int, choices = range(1, 2), default = 1, help = '')
-
     parser.add_argument('--batch_size', type = int, default = 64, help = '')
     parser.add_argument('--num_epochs', type = int, default = 10, help = '')
 
